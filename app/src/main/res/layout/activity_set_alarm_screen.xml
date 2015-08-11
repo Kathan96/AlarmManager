@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.android.alarmmanager.SetAlarmScreen">
+
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="183dp"
+        android:id="@+id/timePicker"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_x="51dp"
+        android:layout_y="-1dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Alarm"
+        android:id="@+id/set_alarm"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/timePicker"
+        android:onClick="setAlarm"
+        android:textSize="30dp"
+        android:layout_x="108dp"
+        android:layout_y="291dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sun"
+        android:id="@+id/sunday"
+        android:width="110dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fri"
+        android:id="@+id/friday"
+        android:layout_above="@+id/sunday"
+        android:layout_alignParentLeft="true"
+        android:width="110dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sat"
+        android:id="@+id/saturday"
+        android:layout_above="@+id/sunday"
+        android:layout_alignParentRight="true"
+        android:width="110dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wed"
+        android:id="@+id/wednesday"
+        android:layout_above="@+id/friday"
+        android:layout_alignParentLeft="true"
+        android:width="110dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/thu"
+        android:id="@+id/thursday"
+        android:layout_above="@+id/saturday"
+        android:layout_alignParentRight="true"
+        android:width="110dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mon"
+        android:id="@+id/monday"
+        android:layout_above="@+id/wednesday"
+        android:layout_alignParentLeft="true"
+        android:width="110dp"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tue"
+        android:id="@+id/tuesday"
+        android:layout_above="@+id/thursday"
+        android:layout_alignParentRight="true"
+        android:width="110dp"/>
+
+
+</RelativeLayout>
